@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_1"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:hint="N"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textSize="22dp" />
+    <EditText
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="M"
+        android:textSize="22dp"
+        android:id="@+id/edt_2"
+        android:inputType="number"
+        android:textColor="#000"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp">
+    <ImageButton
+        android:id="@+id/boton_Generar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generar Numeros"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/flash"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir archivo"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/boton_Mostrar"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/view"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generar"
+            android:textColor="#000"
+            android:layout_marginLeft="70dp"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:layout_marginLeft="95dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtPrimos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="#000"/>
+    </ScrollView>
+
+</LinearLayout>
